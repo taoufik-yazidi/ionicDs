@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>All User</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+    <ion-card *ngFor="let u of users">
+        <ion-card-header color="primary">
+            <ion-card-title>{{u.nom}}</ion-card-title>
+
+        </ion-card-header>
+        <ion-card-content>
+            <ion-item>
+                <ul>
+                    <li>Age : {{ u.Age}}</li>
+                    <li>Mode prise en charge : {{u.modeCharge}}</li>
+                    <li>Antécédents : {{u.antecedent}}</li>
+                    <li>Tension : {{u.tension}}</li>
+                    <li>Poids : {{u.poids}}</li>
+                    <li>Type douleur : {{u.TypeDouleur}} </li>
+                    <li>Période : {{u.periode}}</li>
+                    <li>Localisation : {{u.localisation}}</li>
+
+                </ul>
+
+
+
+            </ion-item>
+
+        </ion-card-content>
+    </ion-card>
+
+
+
+</ion-content>
